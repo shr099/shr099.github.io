@@ -1,0 +1,68 @@
+<html data-lt-installed="true">
+<head>
+    <title>Profesorcito</title>
+</head>
+
+<body style="background-color: #0637af;">
+    
+    <center>
+        <!-- Alinear logo e imagnes de inicio, nosotros, serivcios, contacto -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <img width="100" height="100" style="border: 10px solid #0637af;" src="logoBlanco-removebg-preview.png" alt="logo de mi pagina web">
+            
+            <a href="index.html">
+                <img src="inicio.png" style="border: 10px;" alt="boton de inicio"></a>
+            <a href="nosotross2.html">
+                <img src="nosotros.png" style="border: 10px;" alt="boton de nosotros"></a>
+            <a href="servicioss2.html">
+                <img src="servicios.png" style="border: 10px ;" alt="boton de servicios"></a>
+            <a href="contactoss2.html">
+                <img src="contacto.png" style="border: 10px ;" alt="boton de contacto"></a>
+        </div>
+        
+    
+        <img src="banner_circulos.png" alt="banner central de nuestra pagina">
+    
+        <!-- Contenido de la página -->
+        <center><table border="0" width="60%" bgcolor="#77CDFF">
+        <tbody><tr>
+            <td>
+            <center><font face="verdana">
+                <h1><font color="darkblue">No hay servicios</font></h1>
+                <h3>Lo siento, no tenemos servicios por el momento</h3>
+            </center>
+                <h5>Pero si tenemos un video...</h5>
+            </font>
+
+        
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ggaSG2kRsFM?si=EVDlTVho2MhpNzLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+            </center>
+
+        </tbody></table></center>
+    
+        <center style="color: white">
+            <a style="color:white" href="index.html">Inicio</a> - 
+            <a style="color:white" href="nosotross2.html">Nosotros</a> - 
+            <a style="color:white" href="servicioss2.html">Servicios</a> -  
+            <a style="color:white" href="contactoss2.html">Contactame</a> <br>
+            Copyright 2024  Mandanos un mensaje via email a 
+            <a style="color:white" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtWvPgHrbwhSqkDnjnLWpxlZHzswCtPvJPwwXXVKkWWxDlDpSvCppZQxsxxfQgkJqrrxPB">shr09@javerianacali.edu.co</a>
+            ó
+            <a style="color:white" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtWvPgHrbwhSqkDnjnLWpxlZHzswCtPvJPwwXXVKkWWxDlDpSvCppZQxsxxfQgkJqrrxPB">ypinzon@unal.edu.com</a>
+            </center>
+    </center>
+
+    <button id="saludo" style="position: absolute; top: 500px; left: 75px;">Saludo</button> <!--boton de js-->
+
+    <!-- Codigo de javascript -->
+    <script>
+        document.getElementById("saludo").addEventListener("click", saludar)
+
+        function saludar() {
+            const nombre = prompt("¿Cuál es tu nombre?");
+            alert("Hola " + nombre + " bienvenido/a a mi página");
+        }
+    </script>
+</body>
+</html>
